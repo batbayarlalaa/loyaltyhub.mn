@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LoyaltyHub</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <style>
     * {
       box-sizing: border-box;
@@ -16,18 +17,126 @@
       place-items: center;
       background: #fff;
       color: #111;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, sans-serif;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transform: translateY(-8vh);
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      margin: 0;
+      object-fit: contain;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-size: 50px;
       font-weight: 700;
-      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+    .subtitle {
+      margin: 30px 0 0;
+      color: #666;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .social-link {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      color: #111;
+      font-size: 28px;
+      line-height: 1;
+      text-decoration: none;
+    }
+
+    .facebook-link {
+      margin-right: -5px;
+      font-size: 24px;
+    }
+
+    .instagram-link {
+      margin-right: 2px;
+    }
+
+    .app-store-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 35px;
+      padding: 13px 24px;
+      border-radius: 10px;
+      background: #000;
+      color: #fff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-decoration: none;
+      text-align: left;
+    }
+
+    .apple-logo {
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .app-store-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .app-store-small-text {
+      font-size: 10px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .app-store-large-text {
+      margin-top: 3px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1;
     }
   </style>
 </head>
 <body>
-  <h1>LoyaltyHub</h1>
+  <main>
+    <img
+      class="logo"
+      src="images/logo.png"
+      alt="LoyaltyHub logo"
+      onerror="this.style.display='none'"
+    >
+    <h1>LoyaltyHub</h1>
+    <p class="subtitle">Локал бизнесийг лояал үйлчлүүлэгчтэй нь холбох гүүр</p>
+    <!-- Replace the link below with your LoyaltyHub App Store URL. -->
+    <a class="app-store-button" href="YOUR_APP_STORE_LINK_HERE" aria-label="Download LoyaltyHub on the App Store">
+      <span class="apple-logo">&#63743;</span>
+      <span class="app-store-text">
+        <span class="app-store-small-text">Download on the</span>
+        <span class="app-store-large-text">App Store</span>
+      </span>
+    </a>
+    <nav class="social-links" aria-label="LoyaltyHub social media">
+      <a class="social-link facebook-link" href="YOUR_FACEBOOK_LINK_HERE" target="_blank" rel="noopener noreferrer" aria-label="LoyaltyHub on Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a class="social-link instagram-link" href="YOUR_INSTAGRAM_LINK_HERE" target="_blank" rel="noopener noreferrer" aria-label="LoyaltyHub on Instagram"><i class="fab fa-instagram"></i></a>
+      <a class="social-link" href="YOUR_YOUTUBE_LINK_HERE" target="_blank" rel="noopener noreferrer" aria-label="LoyaltyHub on YouTube"><i class="fab fa-youtube"></i></a>
+    </nav>
+  </main>
 </body>
 </html>
