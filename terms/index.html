@@ -78,6 +78,37 @@
       color: #1769e0;
     }
 
+    .site-footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 24px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .footer-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 16px;
+    }
+
+    .site-footer a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .site-footer a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
     @media (max-width: 520px) {
       main {
         width: min(100% - 32px, 720px);
@@ -86,6 +117,11 @@
 
       h1 {
         margin-top: 36px;
+      }
+
+      .site-footer {
+        flex-direction: column;
+        gap: 8px;
       }
     }
   </style>
@@ -192,6 +228,18 @@
         Утас: <a href="tel:60708870">60708870</a>
       </p>
     </section>
+
+    <footer class="site-footer">
+      <span>© 2026 LoyaltyHub</span>
+      <div class="footer-group" aria-label="Холбоо барих мэдээлэл">
+        <a href="mailto:loyaltyhub.mn@gmail.com">loyaltyhub.mn@gmail.com</a>
+        <a href="tel:60708870">60708870</a>
+      </div>
+      <nav class="footer-group" aria-label="Хууль эрх зүйн мэдээлэл">
+        <a href="/terms/">Үйлчилгээний нөхцөл</a>
+        <a href="/privacy/">Нууцлалын бодлого</a>
+      </nav>
+    </footer>
   </main>
 </body>
 </html>

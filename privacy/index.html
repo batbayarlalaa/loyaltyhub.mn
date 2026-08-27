@@ -99,30 +99,35 @@
       text-underline-offset: 3px;
     }
 
-    .contact {
-      margin-top: 40px;
-      padding: 22px 24px;
-      border-radius: 16px;
-      background: #f5f5f5;
-    }
-
-    .contact h2 {
-      margin-bottom: 6px;
-    }
-
-    footer {
+    .site-footer {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 20px;
+      justify-content: center;
+      gap: 10px 24px;
       margin-top: 48px;
       padding-top: 24px;
-      border-top: 1px solid #e8e8e8;
+      border-top: 1px solid #eee;
       color: #666;
       font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
     }
 
-    footer a {
+    .footer-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 16px;
+    }
+
+    .site-footer a {
       color: #555;
+      text-decoration: none;
+    }
+
+    .site-footer a:hover {
+      color: #000;
+      text-decoration: underline;
     }
 
     @media (max-width: 520px) {
@@ -135,8 +140,9 @@
         margin-top: 36px;
       }
 
-      .contact {
-        padding: 20px;
+      .site-footer {
+        flex-direction: column;
+        gap: 8px;
       }
     }
   </style>
@@ -229,14 +235,16 @@
       <p>Энэхүү бодлогыг Монгол Улсын <a href="https://legalinfo.mn/mn/detail?lawId=16390288615991" target="_blank" rel="noopener noreferrer">Хүний хувийн мэдээлэл хамгаалах тухай хууль</a> болон бусад холбогдох хууль тогтоомжид нийцүүлэн хэрэглэнэ.</p>
     </section>
 
-    <section class="contact">
-      <h2>Холбоо барих</h2>
-      <p>Хувийн мэдээлэл, зөвшөөрөл цуцлах, мэдээлэл засуулах эсвэл устгуулах хүсэлтээ <a href="mailto:loyaltyhub.mn@gmail.com">loyaltyhub.mn@gmail.com</a> хаягаар илгээнэ үү.</p>
-    </section>
-
-    <footer>
+    <footer class="site-footer">
       <span>© 2026 LoyaltyHub</span>
-      <a href="/terms/">Үйлчилгээний нөхцөл</a>
+      <div class="footer-group" aria-label="Холбоо барих мэдээлэл">
+        <a href="mailto:loyaltyhub.mn@gmail.com">loyaltyhub.mn@gmail.com</a>
+        <a href="tel:60708870">60708870</a>
+      </div>
+      <nav class="footer-group" aria-label="Хууль эрх зүйн мэдээлэл">
+        <a href="/terms/">Үйлчилгээний нөхцөл</a>
+        <a href="/privacy/">Нууцлалын бодлого</a>
+      </nav>
     </footer>
   </main>
 </body>
