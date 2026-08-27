@@ -99,37 +99,6 @@
       text-underline-offset: 3px;
     }
 
-    .site-footer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px 24px;
-      margin-top: 48px;
-      padding-top: 24px;
-      border-top: 1px solid #eee;
-      color: #666;
-      font-size: 14px;
-      line-height: 1.5;
-      text-align: center;
-    }
-
-    .footer-group {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 6px 16px;
-    }
-
-    .site-footer a {
-      color: #555;
-      text-decoration: none;
-    }
-
-    .site-footer a:hover {
-      color: #000;
-      text-decoration: underline;
-    }
-
     @media (max-width: 520px) {
       main {
         width: min(100% - 32px, 720px);
@@ -140,10 +109,6 @@
         margin-top: 36px;
       }
 
-      .site-footer {
-        flex-direction: column;
-        gap: 8px;
-      }
     }
   </style>
 </head>
@@ -235,17 +200,14 @@
       <p>Энэхүү бодлогыг Монгол Улсын <a href="https://legalinfo.mn/mn/detail?lawId=16390288615991" target="_blank" rel="noopener noreferrer">Хүний хувийн мэдээлэл хамгаалах тухай хууль</a> болон бусад холбогдох хууль тогтоомжид нийцүүлэн хэрэглэнэ.</p>
     </section>
 
-    <footer class="site-footer">
-      <span>© 2026 LoyaltyHub</span>
-      <div class="footer-group" aria-label="Холбоо барих мэдээлэл">
-        <a href="mailto:loyaltyhub.mn@gmail.com">loyaltyhub.mn@gmail.com</a>
-        <a href="tel:60708870">60708870</a>
-      </div>
-      <nav class="footer-group" aria-label="Хууль эрх зүйн мэдээлэл">
-        <a href="/terms/">Үйлчилгээний нөхцөл</a>
-        <a href="/privacy/">Нууцлалын бодлого</a>
-      </nav>
-    </footer>
+    <section>
+      <h2>Холбоо барих мэдээлэл</h2>
+      <p>
+        Вэбсайт: <a href="https://www.loyaltyhub.mn">www.loyaltyhub.mn</a><br>
+        Имэйл: <a href="mailto:loyaltyhub.mn@gmail.com">loyaltyhub.mn@gmail.com</a><br>
+        Утас: <a href="tel:60708870">60708870</a>
+      </p>
+    </section>
   </main>
 </body>
 </html>
